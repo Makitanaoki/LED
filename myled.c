@@ -14,17 +14,63 @@ static struct cdev cdv;
 static struct class *cls = NULL;
 static volatile u32 *gpio_base = NULL;
 
+
 static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_t* pos)
 {
 	char c;
 	if(copy_from_user(&c, buf, sizeof(char)))
 		return -EFAULT;
 
+
 	if(c == '0'){
-		gpio_base[10] = 1 << 25;
+		gpio_base[10] = 0xF << 20;
 	}else if(c == '1'){
-		gpio_base[7] = 1 << 25;
+		gpio_base[10] = 0xF << 20;
+		gpio_base[7] = 0x1 << 20;
+	}else if(c == '2'){
+		gpio_base[10] = 0xF << 20;
+		gpio_base[7] = 0x2 << 20;
+	}else if(c == '3'){
+		gpio_base[10] = 0xF << 20;
+		gpio_base[7] = 0x3 << 20;
+	}else if(c == '4'){
+		gpio_base[10] = 0xF << 20;
+		gpio_base[7] = 0x4 << 20;
+	}else if(c == '5'){
+		gpio_base[10] = 0xF << 20;
+		gpio_base[7] = 0x5 << 20;
+	}else if(c == '6'){
+		gpio_base[10] = 0xF << 20;
+		gpio_base[7] = 0x6 << 20;
+	}else if(c == '7'){
+		gpio_base[10] = 0xF << 20;
+		gpio_base[7] = 0x7 << 20;
+	}else if(c == '8'){
+		gpio_base[10] = 0xF << 20;
+		gpio_base[7] = 0x8 << 20;
+	}else if(c == '9'){
+		gpio_base[10] = 0xF << 20;
+		gpio_base[7] = 0x9 << 20;
+	}else if(c == 'A'){
+		gpio_base[10] = 0xF << 20;
+		gpio_base[7] = 0xA << 20;
+	}else if(c == 'B'){
+		gpio_base[10] = 0xF << 20;
+		gpio_base[7] = 0xB << 20;
+	}else if(c == 'C'){
+		gpio_base[10] = 0xF << 20;
+		gpio_base[7] = 0xC << 20;
+	}else if(c == 'D'){
+		gpio_base[10] = 0xF << 20;
+                gpio_base[7] = 0xD << 20;
+	}else if(c == 'E'){
+		gpio_base[10] = 0xF << 20;
+                gpio_base[7] = 0xE << 20;
+	}else if(c == 'F'){
+		gpio_base[10] = 0xF << 20;
+                gpio_base[7] = 0xF << 20;
 	}
+	
 
 	return 1;
 }
@@ -74,11 +120,12 @@ static int __init init_mod(void)
 
 	gpio_base = ioremap_nocache(0x3f200000, 0xA0);
 
-	const u32 led = 25;
-	const u32 index = led/10;
-	const u32 shift = (led%10)*3;
-	const u32 mask = ~(0x7 << shift);
-	gpio_base[index] = (gpio_base[index] & mask) | (0x1 << shift);
+	//const u32 led = 23;
+	const u32 index = 2;
+	//const u32 shift = (led%10)*3;
+	//const u32 mask = ~(0x7 << shift);
+	//gpio_base[index] = (gpio_base[index] & mask) | (0x1 << shift);
+	gpio_base[index] = 0x249;
 
 	return 0;
 }
