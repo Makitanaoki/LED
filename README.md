@@ -27,11 +27,7 @@
 実行するには、以下のコマンドを実行してください
 
 $ git clone https://github.com/Makitanaoki/LED.git
-
 $cd LED/kadai1
-
 $make
-
 $sudo insmod myled.ko
-
 $sudo chmod 666 /dev/myled0
