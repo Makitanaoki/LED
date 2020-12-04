@@ -62,4 +62,32 @@ $ echo F > /dev/myled0
 
 LEDが4つ点灯。2進数で1111を表します
 
+・その他実行コマンド
+
+$ echo 2 > /dev/myled0
+
+$ echo 3 > /dev/myled0
+
+$ echo 4 > /dev/myled0
+
+$ echo 5 > /dev/myled0
+
+$ echo 6 > /dev/myled0
+
+$ echo 7 > /dev/myled0
+
+$ echo 9 > /dev/myled0
+
+$ echo A > /dev/myled0
+
+$ echo B > /dev/myled0
+
+$ echo C > /dev/myled0
+
+$ echo D > /dev/myled0
+
+$ echo E > /dev/myled0
+
 ## デモ動画
+
+https://youtu.be/u_C2ee9Y79U
