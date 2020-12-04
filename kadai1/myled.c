@@ -1,3 +1,8 @@
+// SPDX-Licence-Indentifer: GPL-2.0
+/*
+ * Copyright (C) 2020 Naoki Makita. ALL right reserved.
+ */
+
 #include <linux/module.h>
 #include <linux/fs.h>
 #include <linux/cdev.h>
