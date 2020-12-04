@@ -58,4 +58,8 @@ $ echo 8 > /dev/myled0
 
 $ echo F > /dev/myled0
 
+![ロボットシステム学課題１_1111](https://user-images.githubusercontent.com/27545346/101145405-10fff380-365d-11eb-85f0-0ab9f841ca8d.jpg)
 
+LEDが4つ点灯。2進数で1111を表します
+
+## デモ動画
