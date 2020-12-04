@@ -21,3 +21,17 @@
 ・LEDのアノードには画像を見て上から順に、GPIO23,22,21,20と接続します。
 
 ・カソードには220Ωの抵抗を接続します。
+
+## ビルド
+
+実行するには、以下のコマンドを実行してください
+
+$ git clone https://github.com/Makitanaoki/LED.git
+
+$cd LED/kadai1
+
+$make
+
+$sudo insmod myled.ko
+
+$sudo chmod 666 /dev/myled0
