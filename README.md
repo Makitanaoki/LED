@@ -91,3 +91,7 @@ $ echo E > /dev/myled0
 ## デモ動画
 
 https://youtu.be/u_C2ee9Y79U
+
+## ライセンス
+
+GNU General Public License v3.0
