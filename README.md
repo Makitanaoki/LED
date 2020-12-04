@@ -95,3 +95,5 @@ https://youtu.be/u_C2ee9Y79U
 ## ライセンス
 
 GNU General Public License v3.0
+
+https://github.com/Makitanaoki/LED/blob/master/COPYING
