@@ -37,10 +37,17 @@ $ sudo insmod myled.ko
 $ sudo chmod 666 /dev/myled0
 
 ## 実行例
-1(16進数)を入力した場合
+
+### 1(16進数)を入力した場合
 
 $ echo 1 > /dev/myled0
 
 ![0001](https://user-images.githubusercontent.com/27545346/101144726-1c065400-365c-11eb-8720-dad8d980b16a.png)
 
 右側のLEDが点灯。2進数で0001を表します。
+
+### 8(16進数)を入力した場合
+
+$ echo 8 > /dev/myled0
+
+
