@@ -15,3 +15,5 @@
 ・ジャンパー線　オスーメス *5
 
 ## 回路
+
+![配線](https://user-images.githubusercontent.com/27545346/101141244-5caf9e80-3657-11eb-998e-e820eec57e71.png)
