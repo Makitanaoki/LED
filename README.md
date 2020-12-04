@@ -50,4 +50,12 @@ $ echo 1 > /dev/myled0
 
 $ echo 8 > /dev/myled0
 
+![ロボットシステム学課題１_1000](https://user-images.githubusercontent.com/27545346/101145106-ab136c00-365c-11eb-8b28-08ca034a193d.jpg)
+
+左側のLEDが点灯。2進数で1000を表します。
+
+### F(16進数)を入力した場合
+
+$ echo F > /dev/myled0
+
 
